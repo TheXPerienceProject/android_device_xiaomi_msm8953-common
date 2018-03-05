@@ -226,6 +226,11 @@ persist.timed.enable=true
 PRODUCT_PROPERTY_OVERRIDES += \
 net.tcp.2g_init_rwnd=10
 
+#USB FFS
+PRODUCT_PROPERTY_OVERRIDES += \
+sys.usb.ffs.max_write=524288 \
+sys.usb.ffs.max_read=524288 \
+sys.usb.mtp.device_type=3
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
