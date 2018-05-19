@@ -128,6 +128,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.fw.dex2oat_thread_count=4 \
 ro.vendor.extension_library=libqti-perfd-client.so
 
+# Enable B service adj transition by default
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.qti.sys.fw.bservice_enable=true \
+ro.vendor.qti.sys.fw.bservice_limit=5 \
+ro.vendor.qti.sys.fw.bservice_age=5000
+
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.use_data_netmgrd=true \
@@ -185,3 +191,4 @@ net.tcp.2g_init_rwnd=10
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
+
