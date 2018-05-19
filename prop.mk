@@ -142,6 +142,10 @@ ro.vendor.qti.sys.fw.trim_empty_percent=100 \
 ro.vendor.qti.sys.fw.trim_cache_percent=100 \
 ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 
+# set max background services
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.config.max_starting_bg=8
+
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.use_data_netmgrd=true \
