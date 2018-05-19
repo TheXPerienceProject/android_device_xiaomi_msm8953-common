@@ -80,6 +80,11 @@ ro.opengles.version=196610 \
 ro.qualcomm.cabl=0 \
 ro.sf.lcd_density=480
 
+# Display colorservice
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.display.enable_default_color_mode=1 \
+ro.sf.hwc_set_default_colormode=true
+
 # DRM
 PRODUCT_PROPERTY_OVERRIDES += \
 drm.service.enabled=true
