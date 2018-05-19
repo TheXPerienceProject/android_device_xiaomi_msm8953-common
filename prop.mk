@@ -204,3 +204,7 @@ net.tcp.2g_init_rwnd=10
 PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
 
+#Enforce apps
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.control_privapp_permissions=enforce \
+debug.enable.gamed=0

@@ -273,6 +273,13 @@ PRODUCT_PACKAGES += \
 # Properties
 -include device/xiaomi/msm8953-common/prop.mk
 
+# Perf configuration
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/gamedwhitelist.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/gamedwhitelist.xml \
+    $(LOCAL_PATH)/configs/gamedwhitelist.xml:system/etc/gamedwhitelist.xml \
+    $(LOCAL_PATH)/configs/whitelistedapps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perf/whitelistedapps.xml \
+    $(LOCAL_PATH)/configs/whitelistedapps.xml:system/etc/whitelistedapps.xml
+
 # QMI
 PRODUCT_PACKAGES += \
     libjson
