@@ -15,3 +15,10 @@ type proc_touchpanel, fs_type, sysfs_type;
 
 #Sysfs Kcal
 type sysfs_kcal, fs_type, sysfs_type;
+
+# Power
+type perfd_data_file, file_type, data_file_type;
+type proc_irq, fs_type;
+type proc_kernel_sched, fs_type;
+type sysfs_power_management, sysfs_type, fs_type;
+

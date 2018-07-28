@@ -104,6 +104,7 @@ BOARD_USES_QCNE := true
 
 # Cpusets
 ENABLE_CPUSETS := true
+ENABLE_SCHEDBOOST := true
 
 # Crypto
 TARGET_HW_DISK_ENCRYPTION := true
