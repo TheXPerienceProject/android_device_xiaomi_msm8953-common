@@ -205,6 +205,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 wifi.interface=wlan0
 
 #Enforce apps
-PRODUCT_PROPERTY_OVERRIDES += \
 ro.control_privapp_permissions=enforce \
+PRODUCT_PROPERTY_OVERRIDES += \
 debug.enable.gamed=0
+
+#Property to enable IO cgroups
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.vendor.iocgrp.config=1
