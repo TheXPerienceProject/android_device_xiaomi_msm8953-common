@@ -209,6 +209,11 @@ endif
 #include device/qcom/sepolicy/sepolicy.mk
 #BOARD_SEPOLICY_DIRS += $(VENDOR_PATH)/sepolicy
 
+# Shim
+TARGET_LD_SHIM_LIBS := \
+    /vendor/lib64/vendor.qti.gnss@1.0_vendor.so|libgnss_shim.so \
+    /system/lib64/vendor.qti.gnss@1.0.so|libgnss_shim.so
+
 # Wi-Fi
 BOARD_USES_AOSP_WLAN_HAL := true
 TARGET_PROVIDES_WCNSS_SERVICE_SOURCE := true

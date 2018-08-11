@@ -180,7 +180,8 @@ PRODUCT_PACKAGES += \
     gps.msm8953 \
     libcurl \
     libgnss \
-    libgnsspps
+    libgnsspps \
+    libgnss_shim
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
