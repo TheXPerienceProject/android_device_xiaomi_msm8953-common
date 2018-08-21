@@ -218,6 +218,10 @@ ro.telephony.default_network=22,20 \
 service.qti.ims.enabled=1 \
 telephony.lteOnCdmaDevice=1
 
+#sensors
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.vendor.sensor.hw.binder.size=8
+
 # Time Services
 PRODUCT_PROPERTY_OVERRIDES += \
 persist.timed.enable=true
@@ -229,7 +233,8 @@ net.tcp.2g_init_rwnd=10
 #USB FFS
 PRODUCT_PROPERTY_OVERRIDES += \
 sys.usb.ffs.max_write=524288 \
-sys.usb.ffs.max_read=524288 \
+sys.usb.ffs.max_read=524288
+\
 sys.usb.mtp.device_type=3
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
