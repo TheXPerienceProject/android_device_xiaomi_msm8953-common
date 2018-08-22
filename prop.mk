@@ -73,6 +73,7 @@ persist.debug.coresight.config=stm-events
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
+debug.hwui.use_buffer_age=false \
 debug.egl.hw=0 \
 debug.enable.sglscale=1 \
 debug.gralloc.enable_fb_ubwc=1 \
