@@ -181,7 +181,8 @@ PRODUCT_PACKAGES += \
     libcurl \
     libgnss \
     libgnsspps \
-    libgnss_shim
+    libgnss_shim \
+    libsensorservice_shim
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \

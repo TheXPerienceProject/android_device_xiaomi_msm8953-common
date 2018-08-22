@@ -212,7 +212,8 @@ endif
 # Shim
 TARGET_LD_SHIM_LIBS := \
     /vendor/lib64/vendor.qti.gnss@1.0_vendor.so|libgnss_shim.so \
-    /system/lib64/vendor.qti.gnss@1.0.so|libgnss_shim.so
+    /system/lib64/vendor.qti.gnss@1.0.so|libgnss_shim.so \
+    /vendor/bin/slim_daemon|libsensorservice_shim.so
 
 # Wi-Fi
 BOARD_USES_AOSP_WLAN_HAL := true
