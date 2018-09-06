@@ -172,6 +172,10 @@ ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.config.max_starting_bg=8
 
+#Media codec binder
+PRODUCT_PROPERTY_OVERRIDES += \
+vendor.mediacodec.binder.size=6
+
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.use_data_netmgrd=true \
