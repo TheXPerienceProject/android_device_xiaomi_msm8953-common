@@ -42,11 +42,26 @@ vendor.voice.playback.conc.disabled=true \
 vendor.voice.record.conc.disabled=false \
 vendor.voice.voip.conc.disabled=true
 
+#APTX
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.bt.enableAptXHD=true \
+persist.service.btui.use_aptx=1 \
+persistent.bt.a2dp_offload_cap=sbc-aptx-aptXHD
+
 # Bluetooth
 PRODUCT_PROPERTY_OVERRIDES += \
 bluetooth.hfp.client=1 \
 qcom.bluetooth.soc=smd \
 ro.bluetooth.hfp.ver=1.7 \
+ro.bluetooth.sap=true  \
+ro.qualcomm.bluetooth.ftp=true \
+ro.qualcomm.bluetooth.hfp=true \
+ro.qualcomm.bluetooth.hsp=true \
+ro.qualcomm.bluetooth.map=true \
+ro.qualcomm.bluetooth.nap=true \
+ro.qualcomm.bluetooth.opp=true \
+ro.qualcomm.bluetooth.pbap=true \
+ro.bluetooth.dun=true  \
 ro.qualcomm.bt.hci_transport=smd
 
 # Camera
