@@ -201,7 +201,9 @@ vendor/lib64/vendor.qti.gnss@1.0_vendor.so
 
 # Graphics
 lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
+lib/libsdm-disp-apis.so
 lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
+lib64/libsdm-disp-apis.so
 vendor/lib/egl/eglSubDriverAndroid.so
 vendor/lib/egl/libEGL_adreno.so
 vendor/lib/egl/libGLESv1_CM_adreno.so
@@ -368,10 +370,12 @@ vendor/lib64/libperipheral_client.so
 etc/permissions/com.qti.snapdragon.sdk.display.xml
 framework/com.qti.snapdragon.sdk.display.jar
 lib/libsd_sdk_display.so:vendor/lib/libsd_sdk_display.so
+lib/libsd_sdk_display.so
 -lib/vendor.display.color@1.0.so
 lib/vendor.display.postproc@1.0.so
 lib/vendor.qti.hardware.qdutils_disp@1.0.so
 lib64/libsd_sdk_display.so:vendor/lib64/libsd_sdk_display.so
+lib64/libsd_sdk_display.so
 -lib64/vendor.display.color@1.0.so
 lib64/vendor.display.postproc@1.0.so
 lib64/vendor.qti.hardware.qdutils_disp@1.0.so
