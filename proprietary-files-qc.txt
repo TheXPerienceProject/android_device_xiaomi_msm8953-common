@@ -249,22 +249,26 @@ vendor/lib64/libRSDriver_adreno.so|7ced49a2f0d3a4729c9c9c914cde297657af61a5
 vendor/lib/hw/vulkan.sdm660.so:vendor/lib/hw/vulkan.msm8953.so|15b765c43b35c113051bc1b93f7a9e0d2586d592
 vendor/lib64/hw/vulkan.sdm660.so:vendor/lib64/hw/vulkan.msm8953.so|4638c1cc6a988225d6c72998de0eca8a9559971b
 
-# Graphics
-lib/libsdm-disp-apis.so:vendor/lib/libsdm-disp-apis.so
-lib64/libsdm-disp-apis.so:vendor/lib64/libsdm-disp-apis.so
+# Graphics (HDR) - from LA.UM.7.2.r1-03600-sdm660.0
 vendor/lib/libhdr_tm.so
+vendor/lib64/libhdr_tm.so
+
+# Graphics
 vendor/lib/libmm-disp-apis.so
 vendor/lib/libmm-hdcpmgr.so
-vendor/lib/libscalar.so
+vendor/lib64/libmm-disp-apis.so
+vendor/lib64/libmm-hdcpmgr.so
+vendor/lib/libsdm-disp-apis.so
+vendor/lib64/libsdm-disp-apis.so
+
+# Graphics (SDM) - from LA.UM.7.2.r1-03600-sdm660.0
+#vendor/lib/libscalar.so
 vendor/lib/libsdm-color.so
 vendor/lib/libsdm-diag.so
 -vendor/lib/libsdm-disp-vndapis.so
 vendor/lib/libsdmextension.so
 vendor/lib/libtinyxml2_1.so
-vendor/lib64/libhdr_tm.so
-vendor/lib64/libmm-disp-apis.so
-vendor/lib64/libmm-hdcpmgr.so
-vendor/lib64/libscalar.so
+#vendor/lib64/libscalar.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-diag.so
 -vendor/lib64/libsdm-disp-vndapis.so
