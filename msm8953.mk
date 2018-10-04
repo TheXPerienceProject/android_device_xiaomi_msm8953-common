@@ -114,12 +114,11 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.0 \
-    libbt-vendor
+    android.hardware.bluetooth@1.0-impl-qti
 
 # Camera
 PRODUCT_PACKAGES += \
-    XPerienceCamera \
+    Camera2 \
     android.hardware.camera.provider@2.4-impl \
     android.hardware.camera.provider@2.4-service \
     camera.device@3.2-impl \
@@ -365,6 +364,8 @@ PRODUCT_COPY_FILES += \
 # Wifi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
+    vendor.qti.hardware.wifi.supplicant@1.0 \
+    vendor.qti.hardware.wifi.supplicant@1.0_vendor \
     libcld80211 \
     libqsap_sdk \
     libQWiFiSoftApCfg \
