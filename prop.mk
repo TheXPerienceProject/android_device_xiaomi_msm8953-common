@@ -68,6 +68,7 @@ ro.qualcomm.bt.hci_transport=smd
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
+vendor.camera.aux.packagelist=com.android.camera \
 camera.display.lmax=1280x720 \
 camera.display.umax=1920x1080 \
 camera.hal1.packagelist=com.skype.raider,com.google.android.talk \
