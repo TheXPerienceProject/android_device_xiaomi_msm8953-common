@@ -97,6 +97,7 @@ debug.enable.sglscale=1 \
 vendor.gralloc.enable_fb_ubwc=1 \
 sdm.debug.disable_skip_validate=1 \
 vendor.display.disable_skip_validate=1 \
+vendor.display.perf_hint_window=50 \
 debug.mdpcomp.logs=0 \
 debug.sf.hw=0 \
 dev.pm.dyn_samplingrate=1 \
@@ -168,7 +169,8 @@ ro.vendor.qti.sys.fw.use_trim_settings=true \
 ro.vendor.qti.sys.fw.empty_app_percent=50 \
 ro.vendor.qti.sys.fw.trim_empty_percent=100 \
 ro.vendor.qti.sys.fw.trim_cache_percent=100 \
-ro.vendor.qti.sys.fw.trim_enable_memory=2147483648
+ro.vendor.qti.sys.fw.trim_enable_memory=2147483648 \
+ro.vendor.qti.sys.fw.bg_apps_limit=60
 
 # set max background services
 PRODUCT_PROPERTY_OVERRIDES += \
