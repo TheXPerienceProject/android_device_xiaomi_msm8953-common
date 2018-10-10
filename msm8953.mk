@@ -153,8 +153,14 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system \
     libgenlock \
     libtinyxml \
-    vendor.display.config@1.0 \
     vendor.display.config@1.0_vendor
+
+# Display QTI
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.display.allocator@1.0 \
+    vendor.qti.hardware.display.composer@1.0 \
+    vendor.display.config@1.4 \
+    vendor.qti.hardware.display.mapper@1.0
 
 # Doze mode
 PRODUCT_PACKAGES += \
@@ -366,7 +372,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
     vendor.qti.hardware.wifi.supplicant@1.0 \
+    vendor.qti.hardware.wifi.supplicant@2.0 \
+    vendor.qti.hardware.wifi.supplicant@2.0_vendor \
     vendor.qti.hardware.wifi.supplicant@1.0_vendor \
+    vendor.qti.hardware.wifi.hostapd@1.0 \
     libcld80211 \
     libqsap_sdk \
     libQWiFiSoftApCfg \
