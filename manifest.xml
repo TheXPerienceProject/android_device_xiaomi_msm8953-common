@@ -302,7 +302,7 @@
     <hal format="hidl">
         <name>com.qualcomm.qti.imscmservice</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IImsCmService</name>
             <instance>qti.ims.connectionmanagerservice</instance>
@@ -363,6 +363,15 @@
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.xperience.power</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IXPeriencePower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.gnss</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -381,11 +390,11 @@
         </interface>
     </hal>
     <hal format="hidl">
-        <name>vendor.qti.hardware.iop</name>
+        <name>vendor.qti.hardware.perf</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
         <interface>
-            <name>IIop</name>
+            <name>IPerf</name>
             <instance>default</instance>
         </interface>
     </hal>
