@@ -28,6 +28,7 @@
 
 # CPU tunable for EAS
 /sys/devices/system/cpu/cpu[0-7]/cpufreq/schedutil(/.*)?            u:object_r:sysfs_devices_system_cpu:s0
+/sys/devices/system/cpu/cpu[0-7]/cpufreq/schedalessa(/.*)?            u:object_r:sysfs_devices_system_cpu:s0
 
 # perfd
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power@1\.0-service.msm8953         u:object_r:hal_power_default_exec:s0
