@@ -1,0 +1,9 @@
+allow init proc:file getattr;
+allow init gx_fpd:binder { call transfer };
+allow init sysfs:file setattr;
+allow init sysfs_leds:lnk_file read;
+allow init servicemanager:binder { call transfer };
+allow init fpc_sysfs:file { read write open };
+allow init hwservicemanager:binder { call transfer };
+allow init tee_device:chr_file { read write open setattr };
+
