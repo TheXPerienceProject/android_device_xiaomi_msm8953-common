@@ -10,6 +10,8 @@ genfscon proc /sys/kernel/sched_small_task           u:object_r:device_proc_kern
 genfscon proc /sys/kernel/sched_spill_nr_run         u:object_r:device_proc_kernel_sched:s0
 genfscon proc /sys/kernel/sched_upmigrate            u:object_r:device_proc_kernel_sched:s0
 genfscon proc /irq                                   u:object_r:device_proc_kernel_sched:s0
+genfscon proc /proc/irq/                             u:object_r:device_proc_kernel_sched:s0
+#genfscon proc /proc/irq/179/smp_affinity
 
 # Rmt
 genfscon debugfs /rmt_storage	u:object_r:debugfs_rmt:s0
