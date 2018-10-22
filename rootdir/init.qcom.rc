@@ -509,6 +509,12 @@ on property:sys.boot_completed=1
 on property:vold.decrypt=trigger_restart_framework
     start config_bt_addr
     start vendor.wcnss-service
+    stop vendor.wifi_hal_legacy
+    start vendor.wifi_hal_legacy
+
+on nonencrypted
+    stop vendor.wifi_hal_legacy
+    start vendor.wifi_hal_legacy
 
 on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
