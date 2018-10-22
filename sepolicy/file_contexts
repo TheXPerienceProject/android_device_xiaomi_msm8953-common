@@ -1,8 +1,13 @@
 # Bluetooth
 /(vendor|system/vendor)/bin/hci_qcomm_init	u:object_r:bluetooth_loader_exec:s0
+/dev/smd3                                                     u:object_r:hci_attach_dev:s0
 
 #Binary files
 /vendor/bin/slim_daemon            u:object_r:location_exec:s0
+
+# Block devices
+/dev/block/bootdevice/by-name/persist		u:object_r:persist_block_device:s0
+/dev/block/platform/soc/7824900.sdhci/by-name/persist                                   u:object_r:persist_block_device:s0
 
 # Data files
 /data/vendor/misc/audio(/.*)?         u:object_r:vendor_audio_data_file:s0

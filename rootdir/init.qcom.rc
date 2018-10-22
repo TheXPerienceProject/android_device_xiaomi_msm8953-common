@@ -660,6 +660,7 @@ service vendor.xperience-post-boot /vendor/bin/init.xperience.postboot.sh
 
 on property:sys.boot_completed=1
     start vendor.qcom-post-boot
+    start vendor.xperience-post-boot
     trigger enable-low-power
 
 on property:ro.data.large_tcp_window_size=true
@@ -695,6 +696,7 @@ on charger
     setprop persist.sys.usb.config mass_storage
     load_system_props
     start vendor.qcom-post-boot
+    start vendor.xperience-post-boot
 
 on property:init.svc.surfaceflinger=restarting
     stop hwcomposer-2-1
