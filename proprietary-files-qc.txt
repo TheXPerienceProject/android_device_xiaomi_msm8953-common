@@ -250,6 +250,8 @@ vendor/lib/libOpenCL.so|fbf2d8e82973ea44583f1ca6a624163759167a73
 vendor/lib/librs_adreno_sha1.so|083c8ea15dc07f20401cb8b03689c923fc9cfb2a
 vendor/lib/librs_adreno.so|4eed2a3b8823f68ae9406a298bbe733f90f95781
 vendor/lib/libRSDriver_adreno.so|61d5980bb4b31cb246aa49b214058b47ab5c4f01
+vendor/lib/libmm-hdcpmgr.so
+vendor/lib64/libmm-hdcpmgr.so
 
 # VULKAN  LA.UM.7.6.2.r1-03000-89xx.0
 vendor/lib/hw/vulkan.msm8996.so:vendor/lib/hw/vulkan.msm8953.so
