@@ -300,6 +300,9 @@ vendor/lib/libdisp-aba.so|36607c5e618110dee7fb32591311a2fc1ff40363
 vendor/lib/vendor.display.postproc@1.0.so|2144a235e058e6ab16b39ee93faa8016c0b71e4f
 vendor/lib64/libdisp-aba.so|c6c3ae514fefea834e7aa796d091aa3136842a16
 vendor/lib64/vendor.display.postproc@1.0.so|c320d6a7abd0f758e0496e8ddd9301a67942a197
+#for vndk xd
+-lib/vendor.display.color@1.0.so
+-lib64/vendor.display.color@1.0.so
 
 # Graphics firmware
 vendor/firmware/a506_zap.b00
